@@ -7,7 +7,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
 import edu.wpi.first.wpilibj.xrp.XRPMotor
 import edu.wpi.first.wpilibj2.command.Command
-import edu.wpi.first.wpilibj2.command.CommandScheduler
 import frc.subsystems.XRPDrivetrain
 
 class Robot : TimedRobot() {
@@ -52,7 +51,6 @@ class Robot : TimedRobot() {
     }
 
     override fun teleopExit() {
-        CommandScheduler.getInstance().cancelAll()
     }
 
     override fun testInit() {
