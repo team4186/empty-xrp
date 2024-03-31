@@ -47,6 +47,9 @@ wpi {
     with(sim) {
         addGui().defaultEnabled.set(true)
         addDriverstation()
+
+        environment["HALSIMXRP_HOST"] = "192.168.42.1"
+        addXRPClient().defaultEnabled = true
     }
 
     with(java) {
